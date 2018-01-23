@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>register</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css" />
+    <link rel="stylesheet" type="text/css" href="../css/aui.css" />
+    <link rel="stylesheet" type="text/css" href="../css/ushare1.0.css" />
+    <style type="text/css">
+        .main{
+            height: 20.2rem;
+            width: 100%;
+            margin-top: 4.5rem;
+        }/*主内容所在区*/
+        .kx{
+            height: 3rem;
+            width: 100%;
+        }/*输入框空隙*/
+        .dl{
+            margin: 0 auto;
+            border-radius:0.5rem;
+            width:11rem;
+            height:2rem;
+            background-color:#ffffff;
+            color:#109cff;
+            font-size: 0.9rem;
+            text-align: center;
+            padding-top: 0.5rem;
+        }/*登陆按钮*/
+    </style>
+</head>
+<body>
+<header class="aui-bar aui-bar-nav">
+    <a class="aui-pull-left aui-btn">
+        <span class="aui-iconfont aui-icon-left"></span>
+    </a>
+    <div class="aui-title">注册</div>
+</header>
+    <div class="main">
+        <input type="text" name="username" value="请输入手机账号">
+        <div class="yzm">获取验证码</div>
+        <input type="text" name="yzm" value="请输入验证码">
+        <div class="kx"></div>
+        <input type="text" name="password1" id="pw1" value="请输入密码">
+        <div class="kx"></div>
+        <input type="text" name="password2" id="pw2" value="请再次输入密码">
+        <div class="kx" style="height: 1.2rem;"></div>
+        <div class="dl">登录</div>
+    </div> 
+</body>
+<script type="text/javascript">
+    var obj1 = document.getElementById('pw1');
+    obj1.onclick = change1;
+    function change1() {
+        obj1.value='';
+        obj1.type='password'
+    }
+    var obj2 = document.getElementById('pw2');
+    obj2.onclick = change2;
+    function change2() {
+        obj2.value='';
+        obj2.type='password'
+    }
+</script>
+</html>

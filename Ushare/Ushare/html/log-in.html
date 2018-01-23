@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>log-in</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css" />
+    <link rel="stylesheet" type="text/css" href="../css/aui.css" />
+    <link rel="stylesheet" type="text/css" href="../css/ushare1.0.css" />
+    <style type="text/css">
+        .uppicture{
+            height: 12.6rem;
+            width: auto;
+            padding-top: 7rem;
+            padding-bottom: 2rem;
+        }/*上部图片区*/
+        .main{
+            height: auto;
+            width: 100%;
+        }/*主内容所在区*/    
+        .log-in{
+            margin: 0 auto;
+            border-radius:0.5rem;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #109cff;
+            width:11rem;
+            height:2rem;
+            background-color:#D7D7D7;
+            color:#109cff;
+            font-size: 0.9rem;
+            text-align: center;
+            padding-top: 0.3rem;
+        }/*登陆按钮*/
+    </style>
+</head>
+<body>
+    <div class="uppicture">
+        <img src="" style="height: 3.75rem;width: 3.75rem;margin: 0 auto;">
+    </div>
+    <div class="main">
+        <input type="text" name="username" value="请输入手机账号">
+        <div style="height: 1rem;width: 100%;"></div>
+        <input type="text" name="password" id="pw" value="请输入账号密码">
+        <div style="height: 1.5rem;width: 100%;"></div>
+        <div class="log-in">登录</div>
+        <div style="height: 1rem;width: 100%;"></div>
+        <p style="margin: 0 auto;text-align: center; font-size: 0.6rem;color: #999999">立即注册</p>
+    </div> 
+</body>
+<script type="text/javascript">
+    var obj = document.getElementById('pw');
+    obj.onclick = change;
+    function change() {
+        obj.value='';
+        obj.type='password'
+    }
+</script>
+</html>

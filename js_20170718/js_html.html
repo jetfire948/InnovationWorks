@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js</title>
+	<style type="text/css">
+		.hid{
+			display : none;
+		}
+		.box1{
+			height: 50px;
+			width: 50px;
+			color: yellow;
+			background-color: purple;
+			font-size: 20px;
+			font-weight: bolder;
+			text-align: center;
+			line-height: 50px;
+			position: absolute;
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<a href="#">only</a>
+		<a href="#">my</a>
+		<a href="#">railgun</a>
+	</div>
+	<input type="button" id="btn" value="隐藏">
+	<div style="font-size: 100px" id="mbq">
+	 ~(￣▽￣)~*<br>
+	(￣y▽,￣)╭<br>
+	=￣ω￣=<br>
+	(●ˇ∀ˇ●)<br>
+	</div>
+	<div id="lt" style="position: relative;"></div>
+</body>
+<script type="text/javascript">
+	var a = 5;
+	var b = 3.13;
+	var c = "bwy";
+	//var d = {name:jetfire sex:male};
+	var e =[[2,4],[56,6]];
+	var f = document.getElementById("box");
+	var g = document.getElementsByTagName("a")[0];
+	console.log(a + b + c);
+	console.log(e[0][0]);
+	console.log(f);
+	console.log(g);
+	function text1() {
+		console.log(e[0][0]);
+	}
+	text1();
+	document.getElementById("box").style.backgroundColor = "pink";
+	document.getElementsByTagName("a")[0].onclick = function(){
+		alert("my railgun");
+	}
+	for (var i = 5; i >= 0; i--) {
+		console.log("~(￣▽￣)~*")
+	}
+	window.onload = function(){
+		var obtn = document.getElementById("btn");
+		var ombq = document.getElementById("mbq");
+		obtn.onclick = showbox;
+		// function showbox(){
+		// 	if ( ombq.style.display == "none" ) {
+		// 		ombq.style.display = "block";
+		// 		obtn.value = "隐藏";
+		// 	}else{
+		// 		ombq.style.display = "none";
+		// 		obtn.value = "显示";
+		// 	}
+		// }
+		function showbox(){
+			if ( ombq.className == "hid" ) {
+				ombq.className = "";
+				obtn.value = "隐藏";
+			}else{
+				ombq.className = "hid";
+				obtn.value = "显示";
+			}
+		}
+		function lt(){
+			for (var i = 0; i < 10; i++) {
+				document.getElementById("lt").innerHTML += 
+				'<div class ="box1" style = "top : '+50*i+'px ;left :'+50*i+'px">'+(1+i)+'</div>';
+			}
+		}
+		lt();
+	}
+</script>
+</html>

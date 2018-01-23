@@ -1,0 +1,209 @@
+.box{
+    height: 20rem;
+    width: 17.25rem;
+    margin:0 auto;
+    margin-bottom: 0.5rem;
+    color:#109CFF;             
+    font-style: 0.7rem;            
+    font-family: "微软雅黑";  
+    clear: both;          
+}/*推荐页热门资源或讨论两大区*/
+.box .word1{
+    height: 1.25rem;
+    width: 3.25rem;
+    float: left;
+    text-align:left;
+}/*热门推荐或资源*/
+.box .word2{
+    height: 1.25rem;
+    width: 3.25rem;
+    float: right;
+    text-align:right;
+}/*更多*/
+.box .box1{
+    height: 3.75rem;
+    width: 17.25rem;
+    float: left;
+    background-color: white;
+}/*单个格子*/
+.box1 img{
+    height: 3.75rem;
+    width: 3.75rem;
+    float: left;
+}/*热门资源单格左侧图*/
+.box1 .rbox{
+    height: 3.75rem;
+    width: 13.5rem;
+    float: right;
+}/*热门资源单个右侧文字区*/
+.box1 .main{
+    height: 1.25rem;
+    width: 12rem;
+    text-align:center;
+    margin: 0 auto;
+    margin-top: 1rem;
+}/*单个格子标题文字*/
+.box1 .lword{
+    height: 0.6rem;
+    width: 5rem;
+    font-size: 0.6rem;
+    color: #989898; 
+    text-align:left;
+    float: left;
+    margin-top: 0.4rem;
+    margin-left: 0.4rem;            
+}/*单个格子点击量*/
+.box1 .rword{
+    height: 0.6rem;
+    width: 5rem;
+    font-size: 0.6rem;
+    color: #989898; 
+    text-align:right;
+    float: right;
+    margin-top: 0.4rem;
+    margin-right: 0.4rem;
+}/*单个格子日期*/
+.box1 .mword{
+    height: 0.6rem;
+    width: 5rem;
+    font-size: 0.6rem;
+    color: #989898; 
+    text-align:center;
+    padding-top: 0.4rem;
+    margin: 0 auto;
+}/*单个格子回复量 */                 
+.rdbox{
+    height: 2rem;
+    width: 17.25rem;
+    margin:0 auto;
+    margin-top: 1rem;
+    border-radius: 15px;
+    color:#CECECE; 
+    line-height: 2rem;
+    padding-left: 5rem;           
+    font-size: 0.7rem;            
+    font-family: "微软雅黑";  
+    background-color: white;
+    clear: both;
+}/*圆角矩形式单格*/
+.rdbox .rdbox_content{
+    float: left;
+    margin-top: 0.5rem;
+    margin-left: 0.25rem;
+    height: 1rem;
+    width: auto;
+    color: #000000;
+    font-size: 0.7rem;            
+    font-family: "微软雅黑";
+    line-height: 1rem;  
+}/*圆角矩形单格内部图标*/
+.rdbox_details{
+    height: 5.5rem;
+    width: 17.25rem;
+    margin:0 auto;
+    margin-top: 1.2rem;
+    border-radius: 70px;
+    color:#000000;
+    text-align: center; 
+    line-height: 2rem;           
+    font-size: 0.7rem;            
+    font-family: "微软雅黑";  
+    background-color: white;
+    clear: both;
+}/*圆角矩形式详情格*/
+.rdbox_details .rdbox_details_content{
+    margin-top: 0.35rem;
+    margin:  0 auto;
+    height: 2.6rem;
+    width: 16rem;
+    color: #000000;
+    font-size: 0.6rem;            
+    font-family: "微软雅黑";
+    line-height: 1rem;  
+}/*圆角矩形单格内部文字*/
+.paw{
+    height: 1rem;
+    width: 2.5rem;
+    float: right;
+    margin-top: 1.5rem;
+    margin-right: 1rem;
+    text-align: center;
+    font-size: 0.6rem;
+    color: #666666;
+}/*点赞或打赏样式*/
+.paw img{
+    height: 1rem;
+    width: 1rem;
+    float: left;
+}/*点赞或打赏样式左侧图*/
+.paw .aw{
+    height: 1rem;
+    width: 1.5rem;
+    float: right;
+}/*点赞或打赏样式右侧文字区*/ 
+.pnw{
+    height: 3rem;
+    width: 2rem;
+    float: right;
+    margin-top: 1.5rem;
+    margin-right: 3.3rem;
+    font-size: 0.6rem;
+    text-align: center;
+}/*预览等图标样式*/
+.pnw img{
+    height: 2rem;
+    width: 2rem;
+    float: right;
+}/*预览等图标样式上侧图*/
+.pnw .nw{
+    height: 1rem;
+    width: 2rem;
+    float: right;
+}/*预览等图标样式下侧文字区*/
+.inputbox{
+    margin: 0 auto;
+    border-radius:0.5rem;
+    width:13.5rem;
+    height:2rem;
+    background-color:#ffffff;
+    color:#999999;
+    font-size: 0.7rem;
+    text-align: center;
+    padding-top: 0.5rem;    
+}/*输入框格式*/
+input[type="text"] {
+    margin: 0 auto;
+    border-radius:0.5rem;
+    width:13.5rem;
+    height:2rem;
+    background-color:#ffffff;
+    color:#999999;
+    font-size: 0.7rem;
+    text-align: center;
+}/*输入框*/
+input[type="password"] {
+    margin: 0 auto;
+    border-radius:0.5rem;
+    width:13.5rem;
+    height:2rem;
+    background-color:#ffffff;
+    color:#999999;
+    font-size: 0.7rem;
+    text-align: center;
+}/*密码输入框*/
+.yzm{
+    margin-top: 0.5rem;
+    margin-bottom:1.4rem;
+    margin-left: 12.1rem;
+    border-radius:0.4rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000000;
+    width:4.4rem;
+    height:1.1rem;
+    background-color:#ffffff;
+    color:#6B6B6B;
+    font-size: 0.6rem;
+    text-align: center;
+    padding-top: 0.1rem;            
+}/*验证码框*/                               

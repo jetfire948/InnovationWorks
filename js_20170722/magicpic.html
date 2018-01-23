@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>magicpic</title>
+</head>
+<style type="text/css">
+	#box{
+		height: 510px;
+		width: 510px;
+		position: relative;
+		background-color: #f2f2f2;
+	}
+	#box div{
+		height: 50px;
+		width: 50px;
+		position: absolute;
+		opacity: 0;
+		filter: alpha(opacity=0);
+	}
+</style>
+<body>
+	<div id="box"></div>
+</body>
+<script type="text/javascript">
+	var obox = document.getElementById('box');
+	var sbox = obox.getElementsByTagName('div');
+	window.onload = function (){
+		for (var i = 0 ; i < 100; i++) {
+			obox.innerHTML += '<div style="left: '+(i%10)*51+'px; top: '+Math.floor(i/10)*51+'px; background-image: url(images/pic.jpg); background-repeat: no-repeat; background-position: -'+(i%10)*50+'px  -'+Math.floor(i/10)*50+'px;"></div>';
+		}
+		for (var i = 0 ; i < sbox.length; i++) {
+			sbox[i].onmouseout = function () {
+				this.style.opacity=1;
+			}
+		}
+	}
+	
+</script>
+</html>
